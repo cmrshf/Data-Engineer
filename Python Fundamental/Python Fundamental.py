@@ -1,4 +1,7 @@
 # Code Hello World
+from cgi import print_arguments
+
+
 print("Hello World")
 print(5+1)
 
@@ -8,7 +11,7 @@ print(5+1)
 
 
 # Comment pada Python
-print("Ini adalah sebuah baris kode") #ini adalahcotoh comment dan tidak akan tercetak
+print("Ini adalah sebuah baris kode") #ini adalah cotoh comment dan tidak akan tercetak
 
     # Tugas Praktek
     print(10*2+5) #fungsi matematika
@@ -53,4 +56,81 @@ type(biodata) #fungsi untuk mengecek jenis tipe data. akan tampil <class 'dict'>
     var_tuple = ("satu", "dua", "tiga")
     var_dict = {"nama":"Ali", 'umur':20}
 
-    
+    print(var_string)
+    print(var_int)
+    print(var_float)
+    print(var_list)
+    print(var_tuple)
+    print(var_dict)
+
+    print(type(var_string))
+    print(type(var_int))
+    print(type(var_float))
+    print(type(var_list))
+    print(type(var_tuple))
+    print(type(var_dict))
+
+
+# IF Statement
+i = 10 #inisialisasi variable i yang memiliki nilai 10
+if(i==10): #pengecekan nilai i apakah sama dengan 10
+    print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+
+
+# IF ... ELSE ...
+i = 10 #inisialisasi variable i yang memiliki nilai 10
+if(i==10): #pengecekan nilai i apakah sama dengan 10
+    print("ini adalah angka 10") #jika TRUE maka akan mencetak kalimat ini
+else:
+    print("bukan angka 10") #jika FALSE akan mencetak kalimat ini
+
+
+# IF ... ELIF ... ELSE
+i = 5
+if(i==5):
+    print("ini adalah angka 5")
+elif(i>5):
+    print("lebih besar dari 5")
+else:
+    print("lebih kecil dari 5")
+
+
+# NESTED IF
+i = 2
+if(i<5):
+    print("nilai i kurang dari 7")
+if(i<3):
+    print("nilai i kurang dari 7 dan kurang dari 3")
+else:
+    print("nilai i kurang dari 7 tapi lebih dari 3")
+
+
+# Praktik Operasi Matematika
+a = 10
+b = 5
+selisih = a-b
+jumlah = a+b
+kali = a*b
+bagi = a/b
+
+print("Hasil penjumlahan a dan b adalah", jumlah)
+print("Selisih a dan b adalah:", selisih)
+print("Hasil perkalian a dan b adalah:", kali)
+print("Hasil pembagian a dan b adalah:", bagi)
+
+
+# Operasi Modulus
+c = 10
+d = 3
+modulus = c%d
+
+print("Hasil modulus:", modulus)
+
+
+# Tugas Mid Praktek
+angka = 5
+if(angka%2==0):
+    print("Angka termasuk bilangan genap")
+else:
+    print("Angka termasuk bilangan ganjil")
+
