@@ -142,3 +142,67 @@ while j<6: #ketika j kurang dari 6 lakukan perulangan, jika tidak stop perulanga
     j = j+1 #setiap kali diakhir perulangan update nilai dengan ditambah 1
 
 
+# For (1)
+for i in range (1,6): #perulangan for sebagai inisialisasi dari angka 1 hingga anka yang lebih kecil daripada 6.
+    print("Ini adalah perulangan ke -", i) #perintahjika looping akan tetap berjalan
+
+
+# For (2)
+for i in range (1,11):
+    if(i%2==0):
+        print("Angka Genap", i)
+    else:
+        print("Angka Ganjil", i)
+
+
+# Membuat Fungsi
+def salam():
+    print("Helo, Selamat Pagi")
+## Pemanggilan Fungsi
+salam()
+
+
+# Parameter pada Fungsi
+def luas_segitiga(alas, tinggi): #alas dan tinggi merupakan parameter yang masuk
+    luas = (alas * tinggi) / 2
+    print("Luas segitiga: %f" % luas);
+
+# Pemanggilan Fungsi
+## 4 dan 6 merupakan parameter yang diinputkan kedalam fungsi luas segitiga
+luas_segitiga(4, 6)
+
+
+# Fungsi dengan Return Value
+def luas_segitiga(alas, tinggi): #alas dan tinggi merupakan parameter yang masuk
+    luas = (alas * tinggi) / 2
+    return luas
+
+# Pemanggilan Fungsi
+## 4 dan 6 merupakan parameter yang diinputkan kedalam fungsi luas segitiga
+print("Luas segitiga: %d" % luas_segitiga(4, 6))
+
+
+# Import Package dan Menggunakan Modul
+import math
+print("Nilai pi adalah:", math.pi) #math.pi merupakan sintak untuk memanggil fungsi
+
+
+# Import dengan Module Rename atau Alias
+import math as m #menggunakan m sebagai module rename atau alias
+print("Nilai pi adalah:", m.pi) #m.pi merupakan sintak untuk memanggil fungsi
+
+
+# Import sebagai Fungsi
+from math import pi
+print("Nilai pi adalah", pi)
+
+
+# Import Semua Isi Moduls
+from math import *
+print("Nilai e adalah:", e)
+
+
+# Membaca Teks File (CSV)
+import csv
+#tentukan lokasi file, nama, file, dan inisialisasi csv
+f = open('penduduk_gender_head.csv', 'r')
